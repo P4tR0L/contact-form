@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form 1.0 by Patryk Kaczmarek</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext">
+    <link rel="stylesheet" href=".templates/lib/css/fontawesome-all-5.10.0.min.css">
+    <link rel="stylesheet" href=".templates/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".templates/css/main.css">
+    <script src=".templates/lib/js/jquery-3.4.1.min.js"></script>
+    <script src=".templates/lib/js/jquery.validate.min.js"></script>
+    <script src=".templates/lib/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <form class="contact-form" id="contact-form" novalidate>
+            <div class="row form-wrapper">
+                <div class="col-sm-12 form-title">
+                    <h4>Formularz kontaktowy</h4>
+                </div>
+                <div class="col-xl-6 col-sm-12 form-col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Imię">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 form-col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="surname" id="surname" placeholder="Nazwisko">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 form-col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="email_address" id="email_address" placeholder="Adres e-mail">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 form-col">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Numer telefonu">
+                    </div>
+                </div>
+                <div class="col-sm-12 form-col">
+                    <div class="form-group select-field">
+                        <select class="form-control form-select" name="subject" id="subject">
+                            <option value="Pomoc techniczna">Pomoc techniczna</option>
+                            <option value="Zamówienia">Zamówienia</option>
+                            <option value="Reklamacje">Reklamacje</option>
+                            <option value="Inny">Inny</option>
+                            <option value="" selected="" disabled="" hidden="">Temat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 form-col custom-subject">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="subject_custom" id="subject_custom" placeholder="Wpisz temat">
+                    </div>
+                </div>
+                <div class="col-sm-12 form-col">
+                    <div class="form-group">
+                        <textarea class="form-control form-message" name="message" id="message" rows="4" autocomplete="off"
+                            placeholder="Wiadomość"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-12 form-col">
+                    <div class="form-group form-check custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="terms_accept" id="terms_accept">
+                        <label class="custom-control-label" for="terms_accept">Zapoznałem się z <span class="terms-popup">regulaminem</span>
+                            oraz akceptuję jego postanowienia</label>
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center form-col">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary send-button">Wyślij</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-success success-box">
+            <i class="fas fa-times-circle info-box-close"></i>
+            <p>Dziękujemy. Wiadomość została wysłana.</p>
+        </div>
+        <div class="alert alert-danger danger-box">
+            <i class="fas fa-times-circle info-box-close"></i>
+            <p></p>
+        </div>
+    </div>
+    <div class="terms-bg">
+        <div class="terms-modal-wrapper">
+            <i class="fas fa-times-circle terms-modal-close"></i>
+            <div class="terms-modal">
+                <h2>Regulamin</h2>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam deleniti non
+                        laudantium
+                        libero fugit, neque, suscipit adipisci dignissimos aut quam eligendi beatae nihil. Fugiat quas
+                        vitae
+                        mollitia iste iure.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src=".templates/js/scripts.js"></script>
+</body>
+
+</html>

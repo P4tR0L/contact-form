@@ -1,0 +1,234 @@
+/* --- global styles v0.14 - 10/02/20 @pk --- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.terms-modal::-webkit-scrollbar {
+    width: .3rem;
+}
+ 
+.terms-modal::-webkit-scrollbar-thumb {
+    background-color: #8b8f91;
+    outline: 1px solid #000;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.container.wrapper {
+    margin: 50px auto;
+}
+
+.form-wrapper {
+    margin: 0 25px;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 35px 0 rgba(0,0,0,.3);
+}
+
+.form-title * {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+
+.select-field {
+    position: relative;
+}
+
+.select-field:hover::after {
+    color: #B61929;
+}
+
+.select-field::after {
+    content: "\2335";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 3px;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-left: 1px solid #ddd;
+    pointer-events: none;
+}
+
+.select-field select {
+    cursor: pointer;
+}
+
+label.error {
+    position: absolute;
+    top: -23px;
+    left: 5px;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #b61929;
+}
+
+.form-message {
+    width: 100%;
+    resize: none;
+}
+
+.custom-subject {
+    display: none;
+}
+
+.custom-checkbox {
+    margin-top: 1.2rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #b61929;
+    border-color: #b61929;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-size: 65%;
+}
+
+.custom-control-label::before {
+    top: .15rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.custom-control-label::after {
+    top: .15rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.terms-popup {
+    color: #b61929;
+    cursor: pointer;
+}
+
+.terms-popup:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #b61929;
+    padding: 8px 35px;
+    border: none;
+    transition: all .2s;
+}
+
+.btn-primary:hover {
+    background-color: #d31b2d;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #ff7c02;
+}
+
+.success-box, .danger-box {
+    display: none;
+    margin: 60px auto;
+    width: 50%;
+}
+
+.success-box .info-box-close, .danger-box .info-box-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 9999;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    text-align: right;
+}
+
+.success-box .info-box-close:hover, .danger-box .info-box-close:hover {
+    color: #b61929;
+}
+
+.success-box p, .danger-box p {
+    margin: 0;
+    text-align: center;
+}
+
+.terms-bg {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.terms-bg .terms-modal {
+    position: relative;
+    text-align: left;
+    margin: 25px;
+    padding: 20px 30px 15px;
+    background-color: #fff;
+    max-width: 990px;
+    max-height: 500px;
+    overflow: auto;
+    border: 15px solid #fff;
+    border-radius: 15px;
+}
+
+.terms-bg .terms-modal h2 {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.terms-bg .terms-modal ol {
+    font-size: .9rem;
+    padding: 0;
+    color: #000;
+}
+
+.terms-bg .terms-modal ol li {
+    margin-bottom: .8rem;
+    padding-left: 3px;
+}
+
+.terms-bg .terms-modal-wrapper {
+    position: relative;
+}
+
+.terms-bg .terms-modal-wrapper .terms-modal-close {
+    position: absolute;
+    top: 35px;
+    right: 46px;
+    z-index: 9999;
+    font-size: 1.7rem;
+    color: #000;
+    cursor: pointer;
+    text-align: right;
+}
+
+.terms-bg .terms-modal-wrapper .terms-modal-close:hover {
+    color: #b61929;
+}
