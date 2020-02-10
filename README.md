@@ -1,8 +1,8 @@
 # contact-form
 
-Simple contact form based on Bootstrap, using jQuery and its validation plugin. Sending via PHP.
+Simple contact form based on Bootstrap, using AJAX, jQuery and its validation plugin. Sending mails via PHP.
 
 
 # Demo
 
-https://webdev24.pl/projekty/contact-form/
+https://webdev24.pl/projects/contact-form/
